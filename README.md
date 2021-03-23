@@ -1,5 +1,5 @@
 # Pagina-Web-PHP
-This project needs a database with this table:
+This project needs a database with this data:
   - Database: pagWeb
   - Table: users(id, username, email, password)
 
