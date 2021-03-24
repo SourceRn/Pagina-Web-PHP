@@ -18,10 +18,7 @@
             <li><a href="nuevoUsuario.php">DAR DE ALTA NUEVO USUARIO <br><br>
                 <img src="images/add_user_male_100px.png" alt="">
             </a></li>
-            <li><a href="#">DAR DE BAJA A UN USUARIO <br><br>
-                <img src="images/delete_user_male_100px.png" alt="">
-            </a></li>
-            <li><a href="#">MODIFICAR USUARIO <br><br>
+            <li><a href="admUsers.php">ADMINISTRAR USUARIOS<br><br>
                 <img src="images/registration_100px.png" alt="">
             </a></li>
         </ul>
