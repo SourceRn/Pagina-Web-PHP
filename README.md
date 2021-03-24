@@ -5,14 +5,15 @@ This project needs a database with this data:
 
 Web Project.
   - Principal Menu
-  - New User
-  - Modify User
-  - Delete User
+     - New User
+     - User Administration
+      - Modify User
+      - Delete User
 
 In this version the section finished are:
   - Principal Menu
   - New User
-  
+
 Unfinished:
-  - Modify User
-  - Delete User
+  - Modify User - Needs CSS
+  - Delete User - Needs CSS
