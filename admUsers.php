@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/stylesAdmUsr.css">
-    <title>Eliminar usuario</title>
+    <title>Administrar Usuarios</title>
 </head>
 <body>
     <div class="header">
@@ -36,8 +36,8 @@
                     <td><?php echo $row['id']?></td>
                     <td><?php echo $row['username']?></td>
                     <td><?php echo $row['email']?></td>
-                    <td id="id1"><a href="#">Modificar</a></td>
-                    <td id="id1"><a href="#">Eliminar</a></td>
+                    <td id="id1"><a href="modificarUsuario.php?id=<?php echo $row['id'] ?>">Modificar</a></td>
+                    <td id="id1"><a href="eliminarUsuario.php?id=<?php echo $row['id'] ?>">Eliminar</a></td>
                 </tr>
             <?php
 

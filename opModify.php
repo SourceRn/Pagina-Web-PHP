@@ -1,11 +1,12 @@
-    <?php
+<?php
+        $id=$_REQUEST['id'];
+
         include("conect.php");
         $nombre = $_POST['username'];
         $email = $_POST['email'];
         $pass = $_POST['pass'];
 
-        $query = "INSERT INTO users(username, email, password) 
-        VALUES('$nombre', '$email', '$pass')";
+        $query = "UPDATE users SET username='$nombre', email='$email', password='pass' WHERE id='$id'";
 
         $result = $con->query($query);
 
