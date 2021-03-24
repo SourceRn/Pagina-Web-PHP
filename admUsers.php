@@ -44,7 +44,7 @@
                 }
             ?>
             </tbody>
-        </table>
+        </table><br><br><h3 id="return"><a href="index.php">REGRESAR</a></h3>
     </div>
 
     <div class="footer">

@@ -24,8 +24,12 @@
             <h3>Contraseña</h3> <br>
             <input type="password" REQUIRED name="pass" placeholder="password"> <br> <br> <br> <br>
 
-            <input type="submit" value="Registrar" id="btnSbm">
+            <input type="submit" value="Registrar" id="btnSbm" target="_blank">
+            <h3 id="return"><a href="index.php">REGRESAR</a></h3>
+            
         </form>
+
+        
     </div>
 
     <div class="footer">
