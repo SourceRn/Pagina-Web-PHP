@@ -5,10 +5,10 @@ This project needs a database with this data:
 
 Web Project.
   - Principal Menu
-  - - New User
-  - - User Administration
-    - - Modify User
-    - - Delete User
+     - New User
+     - User Administration
+      - Modify User
+      - Delete User
 
 In this version the section finished are:
   - Principal Menu
