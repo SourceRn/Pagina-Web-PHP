@@ -3,38 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styleModUsr.css">
     <title>Modificar Usuario</title>
 </head>
-<body>
-    <?php
+<body class="body">
+    <header class="header">
+    </header>
 
-        $id = $_REQUEST['id'];
+    <div class="content">
+        <?php
 
-        include("conect.php");
+            $id = $_REQUEST['id'];
 
-        $query = "SELECT id, username, email, password FROM users WHERE id='$id'";
-        $result = $con->query($query);
-        $row=$result->fetch_assoc();
-    ?>
+            include("conect.php");
 
-    <form action="opModify.php?id=<?php echo $row['id'] ?>" method="POST"> <br><br><br><br><br><br><br>
-        <h1>MODIFICAR USUARIO</h1> <br><br>
-        <img src="images/data_protection_100px.png" alt="">
-        <br><br><br><br>
-        <h3>ID</h3>
-        <label><h3>USER ID: <?php echo $row['id']; ?></h3></label>
-        <h3>Nombre de Usuario</h3> <br>
-        <input type="text" REQUIRED name="username" placeholder="username" value="<?php echo $row['username']; ?>"> <br> <br>
-        <h3>Correo de Electronico</h3> <br>
-        <input type="email" REQUIRED name="email" placeholder="email" value="<?php echo $row['email']; ?>"> <br> <br>
-        <h3>Contraseña</h3> <br>
-        <input type="text" REQUIRED name="pass" placeholder="pass" value="<?php echo $row['password']; ?>"> <br> <br> <br> <br>
+            $query = "SELECT id, username, email, password FROM users WHERE id='$id'";
+            $result = $con->query($query);
+            $row=$result->fetch_assoc();
+        ?>
 
-        <input type="submit" value="ACTUALIZAR DATOS" id="btnSbm">
-            
-    </form>
-    <h3><a href="admUsers.php">CANCELAR</a></h3>
+        <form action="opModify.php?id=<?php echo $row['id'] ?>" method="POST"> <br><br><br><br><br><br><br>
+            <h1>MODIFICAR USUARIO</h1> <br><br>
+            <img src="images/data_protection_100px.png" alt="">
+            <br><br><br><br>
+            <label><h3>USER ID: <?php echo $row['id']; ?></h3></label><br>
+            <h3>Nombre de Usuario</h3> <br>
+            <input type="text" REQUIRED name="username" placeholder="username" value="<?php echo $row['username']; ?>"> <br> <br>
+            <h3>Correo de Electronico</h3> <br>
+            <input type="email" REQUIRED name="email" placeholder="email" value="<?php echo $row['email']; ?>"> <br> <br>
+            <h3>Contraseña</h3> <br>
+            <input type="text" REQUIRED name="pass" placeholder="pass" value="<?php echo $row['password']; ?>"> <br> <br> <br> <br>
 
+            <input type="submit" value="ACTUALIZAR DATOS" id="btnSbm">
+            <h3><a href="admUsers.php">CANCELAR</a></h3>
+        </form>
+        
+    </div>
+    
+    <footer>
+    </footer>
     
 </body>
 </html>
