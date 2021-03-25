@@ -13,7 +13,5 @@ Web Project.
 In this version the section finished are:
   - Principal Menu
   - New User
-
-Unfinished:
-  - Modify User - Needs CSS
-  - Delete User - Needs CSS
+  - Modify User 
+  - Delete User 
