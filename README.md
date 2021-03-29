@@ -15,3 +15,4 @@ In this version the section finished are:
   - New User
   - Modify User 
   - Delete User 
+  - User administration
